@@ -5,7 +5,7 @@ const getProducts = async (request, h) => {
   const { page, per_page } = request.query;
 
   const pages = page || 1
-  const limits = per_page || 10
+  const limits = per_page || 8
 
   try {
     const products = await productService.getProducts(pages, limits);
