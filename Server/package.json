@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./app/index.js",
+    "start:create": "node ./app/migrations/migrations.js",
+    "start:seed": "node ./app/seeders/seeder.js"
+  },
+  "author": "afrizalmuh",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "axios": "^1.6.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "hapi-cors": "^1.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
